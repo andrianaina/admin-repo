@@ -1,0 +1,43 @@
+mat-toolbar{
+    background-color:#403166;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+
+}
+span{
+    color:#fff;
+}
+a{
+    color:#fff;
+}
+
+#but {
+    background-color: #403166;
+    color: White;
+    border: 1px solid  #403166;
+    width:20%;
+    font-size: 18px;
+    border-radius: 50px;
+  }
+
+.nela{
+    width:5%;
+}
+.link{
+    width: 80%;
+}
+.signout{
+    width: 10%;
+}
+
+#signoutbut{
+    background-color: #403166;
+    color: #54c1c1;
+    border: 1px solid  #54c1c1;
+    width: 120%;
+    font-size: 18px;
+}
+
+ 

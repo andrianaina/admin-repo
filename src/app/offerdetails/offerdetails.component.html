@@ -1,0 +1,28 @@
+<h1>Offer details</h1>
+<hr>
+<table id="users">
+    <thead>
+        <tr>
+            <th *ngFor=" let header of offerheader">
+                {{header}}
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor=" let offercontent of contentoffers">
+            <td>
+                {{transformType(offercontent['idtype'])}}
+            </td>
+            <td>
+                {{offercontent['domain']}}
+            </td>
+            <td>
+                {{offercontent['valeur']}}
+            </td>
+            <td>
+                <a routerLink="/offerdetailsupdate/{{offercontent['id']}}/{{offercontent['idoffre']}}"><button id="but">update</button></a>
+                <button id="but2" (click)="delete(offercontent['id'])">delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

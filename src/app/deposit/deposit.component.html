@@ -1,0 +1,33 @@
+<div class="deposit">
+    <h1>The list of deposits to validate</h1>
+<hr>
+<table id="users">
+    <thead>
+        <tr>
+            <th *ngFor=" let header of depositeheader">
+                {{header}}
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor=" let content of depositecontent">
+            <td>
+                {{content['iduser']}}
+            </td>
+            <td>
+                {{content['valeur']}}
+            </td>
+            <td>
+                {{content['datedepot']}}
+            </td>
+            <td>
+                
+                <button id="but" (click)="validIt(content['id'])"><mat-icon>done_outline</mat-icon>validate</button>
+                
+                <button id="but2" (click)="declineIt(content['id'])"><mat-icon>clear</mat-icon>decline</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+</div>

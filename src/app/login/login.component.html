@@ -1,0 +1,18 @@
+<form #f="ngForm" (ngSubmit)="login(f)"> 
+  <mat-card>
+    <mat-card-header class="titre">
+      <h1>Login</h1>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="row">
+          <input class="input" type="text"  ngModel name="tel" placeholder="Administrator identification" >
+      </div>
+      <div class="row">
+          <input class="input" type="password" ngModel name="mdp" placeholder="Password">
+      </div>
+      <div class="row">
+          <input type="submit" id="but" value="Sign In">
+      </div>
+    </mat-card-content>
+  </mat-card>
+</form>

@@ -1,0 +1,32 @@
+<h1>The list of offers</h1>
+<hr>
+<table id="users">
+    <thead>
+        <tr>
+            <th *ngFor=" let header of offerheader">
+                {{header}}
+            </th>
+        </tr>
+    </thead>
+    
+    <tbody>
+        <tr *ngFor=" let offercontent of contentoffers">
+            <td>
+                {{offercontent['nom']}}
+            </td>
+            <td>
+                {{offercontent['prix']}}
+            </td>
+            <td>
+                {{transformCategorie(offercontent['idcat'])}}
+            </td>
+            <td>
+                <a routerLink="/offerdetails/{{offercontent['id']}}"><button id="but3">view details</button></a>
+            </td>
+            <td>
+                <a routerLink="/updateoffer/{{offercontent['id']}}"><button id="but">update</button></a>
+                
+            </td>
+        </tr>
+    </tbody>
+</table>

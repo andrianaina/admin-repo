@@ -1,0 +1,14 @@
+.card{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    margin-top: 5%;
+}
+app-offerdetails{
+    width: 65%;
+}
+app-offerdetailsinsert{
+    width: 25%;
+}

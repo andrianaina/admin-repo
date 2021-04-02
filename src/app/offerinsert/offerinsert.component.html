@@ -1,0 +1,28 @@
+  <form #f="ngForm" (ngSubmit)="addOffre(f)"> 
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title id="title">Insertion of new offer</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="row">
+            <input class="input" type="text" ngModel name="nom" placeholder="Name" >
+        </div>
+        <div class="row">
+            <input class="input" type="text" ngModel name="prix" placeholder="Price">
+        </div>
+        <select class="input" ngModel name="idcat">
+          <option value="1" default>
+            Hebdomadaire
+          </option>
+          <option value="2">
+            Mensuel
+          </option>
+        </select>
+        <div class="row">
+          <input type="submit" id="but" value="Insert offer">
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </form>
+
+  

@@ -1,0 +1,34 @@
+<form #f="ngForm" (ngSubmit)="insertDetails(f)"> 
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title id="title">Insertion of new offer Details</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        
+        <div class="row">
+              <input class="input" type="text" ngModel name="valeur" placeholder="Value">
+        </div>
+        
+        <select class="input" ngModel name="idtype">
+            <option value="1">
+              appel
+            </option>
+            <option value="2">
+              sms
+            </option>
+            <option value="3">
+              internet
+            </option>
+        </select>
+
+        <div class="row">
+            <input class="input" type="text" ngModel name="domain"  placeholder="domain" >
+        </div>
+        <div class="row">
+            <input id="but" type="submit" value=" Insert new detail ">
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </form>
+
+  
